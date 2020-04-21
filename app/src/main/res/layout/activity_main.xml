@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/calc_padding"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/operation">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calc_input_height"
+            android:gravity="center_vertical |end"
+            android:hint="@string/calc_input_hint"
+            android:drawablePadding="16dp"
+            android:drawableEnd="@drawable/ic_backspace_black_36dp"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:maxLength="16"
+            android:id="@+id/operationInput"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <include layout="@layout/buttons_canvas_col0"/>
+    <include layout="@layout/buttons_canvas_col1"/>
+    <include layout="@layout/buttons_canvas_row0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonsRow1"
+        android:orientation="horizontal"
+        android:layout_below="@id/buttonsRow0"
+        android:layout_toRightOf="@+id/buttonsColumn1">
+        <Button
+            android:layout_width="@dimen/calc_btn_height"
+            android:layout_height="@dimen/calc_btn_height"
+            android:theme="@style/CalcButtonBase"
+            android:id="@+id/btnSix"
+            android:text="@string/calc.btn.six"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/calc_btn_height"
+            android:theme="@style/CalcButtonBase.Dark"
+            android:layout_weight="1"
+            android:id="@+id/btnBetween"
+            android:text="@string/calc.btn.between"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/calc_btn_height"
+            android:theme="@style/CalcButtonBase.Dark"
+            android:layout_weight="1"
+            android:id="@+id/btnTimes"
+            android:text="@string/calc.btn.times"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonsRow2"
+        android:orientation="horizontal"
+        android:layout_below="@id/buttonsRow1"
+        android:layout_toRightOf="@+id/buttonsColumn1">
+        <Button
+            android:layout_width="@dimen/calc_btn_height"
+            android:layout_height="@dimen/calc_btn_height"
+            android:theme="@style/CalcButtonBase"
+            android:id="@+id/btnThree"
+            android:text="@string/calc.btn.three"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/calc_btn_height"
+            android:theme="@style/CalcButtonBase.Dark"
+            android:layout_weight="1"
+            android:id="@+id/btnSub"
+            android:text="@string/calc.btn.sub"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/calc_btn_height"
+            android:theme="@style/CalcButtonBase.Dark"
+            android:layout_weight="1"
+            android:id="@+id/btnSum"
+            android:text="@string/calc.btn.sum"/>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase.Darker"
+        android:layout_below="@id/buttonsRow2"
+        android:layout_toRightOf="@id/buttonsColumn1"
+        android:layout_weight="1"
+        android:id="@+id/btnCalc"
+        android:text="@string/calc.btn.calc"/>
+</RelativeLayout>

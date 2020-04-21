@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/operation"
+    android:id="@+id/buttonsRow0"
+    android:layout_toRightOf="@+id/buttonsColumn1">
+
+    <Button
+        android:layout_width="@dimen/calc_btn_height"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase"
+        android:id="@+id/btnNine"
+        android:text="@string/calc.btn.nine"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase.Danger"
+        android:id="@+id/btnClear"
+        android:text="@string/calc.btn.clear"
+        android:layout_toRightOf="@id/btnNine"/>
+</RelativeLayout>

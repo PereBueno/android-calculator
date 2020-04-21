@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/calc_btn_height"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/operation"
+    android:layout_toRightOf="@id/buttonsColumn0"
+    android:id="@+id/buttonsColumn1"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase"
+        android:id="@+id/btnEight"
+        android:text="@string/calc.btn.eight"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase"
+        android:id="@+id/btnFive"
+        android:text="@string/calc.btn.five"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase"
+        android:id="@+id/btnTwo"
+        android:text="@string/calc.btn.two"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase"
+        android:id="@+id/btnZero"
+        android:text="@string/calc.btn.zero"/>
+</LinearLayout>
+

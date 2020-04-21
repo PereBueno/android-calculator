@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/calc_btn_height"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/operation"
+    android:id="@+id/buttonsColumn0"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase"
+        android:id="@+id/btnSeven"
+        android:text="@string/calc.btn.seven"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase"
+        android:id="@+id/btnFour"
+        android:text="@string/calc.btn.four"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase"
+        android:id="@+id/btnOne"
+        android:text="@string/calc.btn.one"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calc_btn_height"
+        android:theme="@style/CalcButtonBase.Dark"
+        android:id="@+id/btnPoint"
+        android:text="@string/calc.btn.point"/>
+</LinearLayout>
+
